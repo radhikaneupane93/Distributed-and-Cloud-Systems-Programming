@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies Review</title>
+    <link rel="stylesheet" href="./style.css" />
+
+  </head>
+
+  <body>
+    <!-- <img src="image.jpg"> -->
+    <h1 id="Movienum">Movies Review</h1>
+    <table id="movieReviews">
+      <thead>
+        <tr>
+          <th>Movie Name</th>
+          <th>Director</th>
+          <th>Release Date</th>
+          <th>Rating</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="MovieList"></tbody>
+    </table>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form id="myForm">
+          <label for="movieName">Movie Name:</label>
+          <input type="text" id="movieName" name="movieName" />
+
+          <label for="director">Director:</label>
+          <input type="text" id="director" name="director" />
+
+          <label for="releaseDate">Release Date:</label>
+          <input type="text" id="releaseDate" name="releaseDate" />
+
+          <label for="rating">Rating:</label>
+          <input type="text" id="rating" name="rating" />
+
+          <input type="submit" value="Update" />
+        </form>
+      </div>
+    </div>
+
+    <div id="mymd" class="modal">
+      <div class="modal-content">
+        <span class="addclose">&times;</span>
+        <form id="myaddForm">
+          <label for="movieName">Movie Name:</label>
+          <input type="text" id="moviename1" name="movieName" />
+
+          <label for="director">Director:</label>
+          <input type="text" id="directer" name="director" />
+
+          <label for="releaseDate">Release Date:</label>
+          <input type="text" id="relese" name="releaseDate" />
+
+          <label for="rating">Rating:</label>
+          <input type="text" id="rate" name="rating" />
+
+          <input type="submit" value="Add" />
+        </form>
+      </div>
+    </div>
+
+    <script type="module" src="./script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f0315fce63.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </body>
+</html>
